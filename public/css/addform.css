@@ -1,0 +1,142 @@
+/* Page Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0a256d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-container h2 {
+    font-size: 20px;
+    color: #0a256d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs and Select */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #0a256d;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    background-color: #0a256d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #08204f;
+}
+
+/* Add Doctor Profile Button (Different Style) */
+.add-profile-btn-container {
+    text-align: center;
+    margin-top: 10px; /* Reduced space between the form and the button */
+}
+
+#addProfileButton {
+    width: 250px; /* Set specific width */
+    background-color: #6c757d;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addProfileButton:hover {
+    background-color: #5a6268;
+}
+
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px 20px;
+    }
+
+    input, select {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #addProfileButton {
+        width: 200px; /* Adjust width on smaller screens */
+    }
+}

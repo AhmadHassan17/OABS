@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Management</title>
+  <link rel="stylesheet" href="../css/managment.css">
+</head>
+<body>
+  <!-- Management Sidebar -->
+  <aside class="sidebar">
+    <h2>Management Dashboard</h2>
+    <nav>
+      <ul>
+        <li><a href="addDoctors.html">Add Doctor</a></li>
+        <li><a href="addDepartment.html">Add Department</a></li>
+        <li><a href="addBill.html">Add Bill/Payments</a></li>
+        <li><a href="addTimeSlots.html">Add Timeslot</a></li>
+        <li><a href="addClinic.html">Add Clinic</a></li>
+        <li><a href="viewAppointments.html">View Appointments</a></li>
+        
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h1>Welcome, Clinic Owner</h1>
+    </header>
+    <section class="stats-overview">
+      <div class="stat-card">
+        <div class="icon-circle">
+          <img src="../images/appointment.png" alt="Appointments Icon">
+        </div>
+        <h3>Total Appointments</h3>
+        <p class="stat-value" id="totalAppointments">50</p>
+        <p class="stat-description">Appointments scheduled this month</p>
+      </div>
+      
+      <div class="stat-card">
+        <div class="icon-circle">
+          <img src="../images/payment.png" alt="Payments Icon">
+        </div>
+        <h3>Total Payments</h3>
+        <p class="stat-value" id="totalPayments">5000$</p>
+        <p class="stat-description">Collected payments this month</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="icon-circle">
+          <img src="../images/doctors.png" alt="Doctors Icon">
+        </div>
+        <h3>Total Doctors</h3>
+        <p class="stat-value" id="totalDoctors">15</p>
+        <p class="stat-description">Active doctors in the clinic</p>
+      </div>
+    </section>
+  </main>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

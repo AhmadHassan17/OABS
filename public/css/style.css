@@ -1,0 +1,345 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  background: #112f83;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header h1 {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../images/clinic.jpg') no-repeat center center/cover;
+  color: #ad9300;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.bookAppointment {
+  background: #f0a500;
+  color: #112f83;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #c77c02;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  display: inline-block;
+  background: #fff;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+}
+
+.service-card h3 {
+  color: #112f83;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background: #112f83;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #f00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background */
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto; /* Center the modal */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+/* Close button styling */
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #f00;
+}
+
+/* Input field styling */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Button styling */
+.modal-content button {
+  width: 100%;
+  background-color: #112f83;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #0a0f45;
+}
+
+/* Link styling */
+.modal-content a {
+  color: #f0a500;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+}
+
+/* User Info Section Styles */
+.user-info {
+  position: fixed; /* Keep it fixed at the right side of the screen */
+  top: 80px; /* Adjust the top position */
+  right: 20px; /* Position it on the right side */
+  background-color: #f8f9fa; /* Light background color for the section */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 250px; /* Adjust width for readability */
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+  text-align: center; /* Center the text */
+  display: none; /* Initially hidden */
+}
+
+.user-info h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.user-info button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ff0000; /* Blue button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.user-info button:hover {
+  background-color: #a30303; /* Darker blue on hover */
+}
+
+.viewAppointments {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Add a smooth color transition */
+}
+
+.viewAppointments:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.viewAppointments:active {
+  background-color: #3e8e41; /* Even darker green on click */
+}
+
+

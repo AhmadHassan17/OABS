@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Booking System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <h1>Online Appointment Booking System</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#" onclick="openLoginModal()">Login</a></li>
+        <li><a href="#" onclick="checkManagementPassword()">Clinic Management</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Book an Appointment with Ease</h2>
+      <p>Quickly find a doctor and schedule your visit today.</p>
+      <button class="bookAppointment" onclick="checkRegistration()">Book Appointment</button>
+      <button class="viewAppointments" onclick="goToViewAppointments()">View Appointments</button>
+    </div>
+  </section>
+
+  
+
+  <!-- Display User Info if Logged In -->
+  <section id="userInfo" class="user-info" style="display: none;">
+    <h3>Welcome, <span id="userName"></span>!</h3>
+    <p>Your Patient ID: <span id="userId"></span></p>
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Our Clinic</h2>
+    <p>Our clinic provides top-quality healthcare services with experienced doctors and advanced medical facilities. Your health is our priority.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+      <h3>Consultations</h3>
+      <p>Speak with our expert doctors to get personalized care.</p>
+    </div>
+    <div class="service-card">
+      <h3>Diagnostics</h3>
+      <p>Accurate diagnostic services to help you stay informed about your health.</p>
+    </div>
+    <div class="service-card">
+      <h3>Emergency Care</h3>
+      <p>Round-the-clock emergency services to assist you when needed.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out.</p>
+    <p>Email: support@clinic.com</p>
+    <p>Phone: +123 456 7890</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Clinic Booking System. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal for Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h2>Login to Your Account</h2>
+      <form id="login">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        <button type="submit">Login</button>
+      </form>
+      <a href="/html/registerPatient.html" onclick="closeModal('loginModal')">Don't have an account? Register here</a>
+    </div>
+  </div>
+
+  <!-- Modal for Password Input -->
+  <div id="passwordModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('passwordModal')">&times;</span>
+      <h2>Clinic Management Access</h2>
+      <p>Please enter the management password:</p>
+      <input type="password" id="managementPassword" placeholder="Password">
+      <button onclick="checkPassword()">Submit</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

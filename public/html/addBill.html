@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Billing Record</title>
+    <link rel="stylesheet" href="../css/addform.css">
+</head>
+<body>
+    <header>Add Billing Record</header>
+    <div class="form-container">
+        <form action="addBilling.php" method="post">
+            <label for="appointment_id">Appointment ID</label>
+            <input type="text" id="appointment_id" name="appointment_id" required>
+
+            <label for="patient_id">Patient ID</label>
+            <input type="text" id="patient_id" name="patient_id" required>
+
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" name="amount" required>
+
+            <label for="payment_date">Payment Date</label>
+            <input type="date" id="payment_date" name="payment_date" required>
+
+            <label for="payment_status">Payment Status</label>
+            <select id="payment_status" name="payment_status" required>
+                <option value="Paid">Paid</option>
+                <option value="Unpaid">Unpaid</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="../js/addbill.js"></script>
+
+</body>
+</html>

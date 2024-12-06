@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Department</title>
+    <link rel="stylesheet" href="../css/addform.css">
+</head>
+<body>
+    <header>
+        <h1>Add Department</h1>
+    </header>
+    <div class="form-container">
+        <h2>New Department</h2>
+        <form id="departmentForm">
+            <label for="department_name">Department Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Add Department</button>
+        </form>
+        <a href="managment.html" class="back-button">Back to Dashboard</a>
+    </div>
+
+    <script src="../js/addDepartment.js"></script>
+</body>
+</html>

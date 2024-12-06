@@ -1,0 +1,209 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header Styling */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #0a256d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Main Content Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px; /* Space below the header */
+    width: 90%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    flex: 2; /* Form takes more space */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    font-size: 18px;
+    color: #0a256d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    overflow-y: auto;
+  }
+
+textarea {
+    resize: none; /* Disable resizing */
+    height: 60px; /* Fixed height for description */
+}
+
+/* Doctor Details Section */
+.doctor-details-container {
+    background: #f8f9fc;
+    padding: 20px;
+    flex: 1; /* Takes less space than the form */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-details-container h2 {
+    font-size: 16px;
+    color: #0a256d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.doctor-details {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.doctor-details .label {
+    font-weight: bold;
+    color: #0a256d;
+}
+
+
+
+button:hover {
+    background-color: #0f004f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack form and details vertically */
+        align-items: center;
+    }
+
+    .form-container, .doctor-details-container {
+        width: 100%;
+        max-width: 500px; /* Limit the width */
+    }
+}
+
+/* Time Slots Styling */
+#time-slots {
+    margin-top: 10px;
+}
+
+.time-slot {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.time-slot:hover {
+    background-color: #0a256d;
+    color: white;
+    transform: scale(1.05);
+}
+
+.time-slot.selected {
+    background-color: #0a256d;
+    color: white;
+    border: 2px solid #0f004f;
+}
+
+/* Button Container for alignment */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 15px; /* Space between buttons */
+    margin-top: 15px;
+}
+
+/* Cancel Button Styling */
+.cancel-button {
+    display: inline-block;
+    padding: 20px 25px;
+    color: #e40101;
+    background-color: transparent;
+    border: 2px solid #e40101;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 120px; /* Smaller width compared to submit button */
+    text-align: center;
+}
+
+.cancel-button:hover {
+    background-color: #e40101;
+    border: 2px solid #e40101;
+    color: #fff;
+}
+
+/* Proceed to Payment Button */
+button[type="submit"] {
+    padding: 10px 40px;
+    background-color: #0a256d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 240px; /* Wider width than cancel button */
+}
+
+button[type="submit"]:hover {
+    background-color: #0f004f;
+}
+

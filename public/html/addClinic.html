@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Clinic</title>
+    <link rel="stylesheet" href="../css/addform.css">
+</head>
+<body>
+    <header>
+        <h1>Add Clinic</h1>
+    </header>
+    <div class="form-container">
+        <h2>New Clinic</h2>
+        <form id="clinicForm">
+            <label for="name">Clinic Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+
+            <label for="contact_number">Contact Number</label>
+            <input type="tel" id="contact_number" name="contact_number" pattern="[0-9]{11}" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+
+            <button type="submit">Add Clinic</button>
+        </form>
+        <a href="managment.html" class="back-button">Back to Dashboard</a>
+    </div>
+
+    <script src="../js/addClinic.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Prescription</title>
+    <link rel="stylesheet" href="../css/addform.css">
+</head>
+<body>
+    <header>Add Prescription</header>
+    <div class="form-container">
+        <form id="prescriptionForm">
+            <label for="appointment_id">Appointment ID</label>
+            <input type="text" id="appointment_id" name="appointment_id" required>
+
+            <label for="doctor_id">Doctor ID</label>
+            <input type="text" id="doctor_id" name="doctor_id" required>
+
+            <label for="patient_id">Patient ID</label>
+            <input type="text" id="patient_id" name="patient_id" required>
+
+            <label for="date_issued">Date Issued</label>
+            <input type="date" id="date_issued" name="date_issued" required>
+
+            <label for="medication">Medication</label>
+            <input type="text" id="medication" name="medication" required>
+
+            <label for="dosage_instructions">Dosage Instructions</label>
+            <textarea id="dosage_instructions" name="dosage_instructions" rows="4" required></textarea>
+
+            <button type="button" id="submitButton">Submit</button>
+        </form>
+    </div>
+    <script src="../js/addPrescription.js"></script>
+</body>
+</html>

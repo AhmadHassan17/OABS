@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="../css/bookAppointment.css">
+</head>
+<body>
+  <header>
+    <h1>Add Appointment</h1>
+  </header>
+  <div class="container">
+    <!-- Form Section -->
+    <div class="form-container">
+      <h2>Appointment Details</h2>
+      <form id="appointment-form">
+        <label for="patient_id">Patient ID:</label>
+<input type="text" id="patient_id" name="patientId" placeholder="Patient ID" required />
+
+
+        <label>Doctor</label>
+        <select name="doctor_id" id="doctor_id" required>
+          <option value="">Select Doctor</option>
+        </select>
+
+        <label>Appointment Date</label>
+        <input type="date" name="appointment_date" required>
+
+        <label>Time Slot ID</label>
+        <input type="number" name="timeslot_id" id="timeslot_id" readonly required>
+
+        <label>Description</label>
+        <textarea name="description" placeholder="Write additional details here"></textarea>
+
+        <div class="button-container">
+          <a href="/index.html" class="cancel-button">Cancel</a>
+        
+          <button type="submit">Book Appointment</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Doctor Details Section -->
+    <div class="doctor-details-container">
+      <h2>Doctor Details</h2>
+      <div id="doctor-details">
+        <p>Select a doctor to view details.</p>
+      </div>
+
+      <h2>Available Time Slots</h2>
+      <div id="time-slots">
+        <p>Select a doctor to view available time slots.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/bookAppointment.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Appointments</title>
+  <link rel="stylesheet" href="../css/viewUserAppointments.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Header -->
+    <header class="dashboard-header">
+      <h1>Welcome, <span id="user-name">John Doe</span></h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Appointments Section -->
+      <section class="appointments">
+        <h2>Your Appointments</h2>
+        <div class="appointment-card">
+          <p><strong>Appointment No:</strong> 001</p>
+          <p><strong>Doctor:</strong> Dr. Sarah Wilson</p>
+          <p><strong>Timeslot:</strong> 3:00 PM - 3:30 PM</p>
+          <p><strong>Appointment Date:</strong> 10th Dec 2024</p>
+          <p><strong>Status:</strong> Confirmed</p>
+          <div class="card-buttons">
+            <button class="cancel-btn">Cancel</button>
+            <button id="call-btn" class="call-btn">Call</button>
+
+          </div>
+        </div>
+
+        <div class="appointment-card">
+          <p><strong>Appointment No:</strong> 002</p>
+          <p><strong>Doctor:</strong> Dr. John Smith</p>
+          <p><strong>Timeslot:</strong> 11:00 AM - 11:30 AM</p>
+          <p><strong>Appointment Date:</strong> 15th Dec 2024</p>
+          <p><strong>Status:</strong> Pending</p>
+          <div class="card-buttons">
+            <button class="cancel-btn">Cancel</button>
+            <button class="call-btn">Call</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Prescriptions Section -->
+      <section class="prescriptions">
+        <h2>Your Prescriptions</h2>
+        <div class="prescription-card">
+          <p><strong>For Appointment No:</strong> 001</p>
+          <p><strong>Date Issued:</strong> 10th Dec 2024</p>
+          <p><strong>Medication:</strong> Painkillers, Antibiotics</p>
+          <p><strong>Dosage Instructions:</strong> 1 tablet twice a day after meals</p>
+        </div>
+
+        <div class="prescription-card">
+          <p><strong>For Appointment No:</strong> 002</p>
+          <p><strong>Date Issued:</strong> 15th Dec 2024</p>
+          <p><strong>Medication:</strong> Vitamins, Sleep Aids</p>
+          <p><strong>Dosage Instructions:</strong> 1 tablet before bedtime</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../js/viewUserAppointment.js"></script>
+</body>
+</html>
